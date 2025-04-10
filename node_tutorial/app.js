@@ -1,13 +1,13 @@
-const http = require("http");
+const http = require('http');
 
-const server = http.createServer((req, res) => {
-    console.log('request event');
-    res.end("hello world");
-})
+/* const server = http.createServer((req, res) => {
+console.log(res.end('welcome'))})
+ */
 
-
-//this runs asynchronously by calling http.createServer()
-//this say keep on listening to the port continuosly
-server.listen(5000, () => {
-    console.log("server listening on port :5000.......");
+//using event emitteer api
+const server = http.createServer()
+//emit request event
+//subcribe to it/ listen for it /responn to it
+server.on('request', (req, res) => {
+    res.end('welcome')
 })
