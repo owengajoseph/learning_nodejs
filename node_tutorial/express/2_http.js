@@ -11,7 +11,7 @@ dir = __dirname;
 //setup static and middleware
 //static assets mean is a file that a serve does not have to change it.
 
-//javascript is a static asset even thought it makes the pages dynamic
+//javascript is a static asset even thought it makes the pages dynamic, it does not modify the database
 app.use( express.static( path.join(__dirname,('./express/navbar-app/'))));
 
 
