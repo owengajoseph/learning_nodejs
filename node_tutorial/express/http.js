@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-
+//the moment you have entered into the home page of the website.
 app.get('/', (req, res) => {
     res.status(200).send('home page');
 
@@ -12,6 +12,7 @@ app.get('/about', (req, res) => {
     res.status(200).send('About page')
 });
 
+//any other apart from the above.
 app.use('*/', (req, res) => {
     res.status(404).send('<h1>resource not found</h1>')
 

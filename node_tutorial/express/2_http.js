@@ -3,10 +3,10 @@ const path = require('path');
 const app = express();
 dir = __dirname;
 
- app.use((req, res) => {
-     res.status(404).send('<h1>resource not found</h1>')
+//  app.use((req, res) => {
+//      res.status(404).send('<h1>resource not found</h1>')
 
- });
+//  });
 
 //setup static and middleware
 //static assets mean is a file that a serve does not have to change it.
