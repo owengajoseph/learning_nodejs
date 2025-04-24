@@ -31,7 +31,7 @@ this functon listens the path api/people.
 app.post('/api/people',(req,res)=>{
     res.status(200).send("success");
 })
-app.listen(5000, () => {
+app.listen(3000, () => {
     console.log('app listening on port 5000');
 
 })
